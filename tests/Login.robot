@@ -9,7 +9,7 @@ Test Teardown   Finish Session
 *Test Cases*
 User Login
 
-    ${user}     Factory User Login
+    ${user}     Factory User    login
         
     Go To Login Page
     Fill Credentials        ${user}
@@ -52,7 +52,7 @@ Incorrect email
 Required email
     [Tags]      desafio_01
 
-    ${user}     Create Dictionary       email=      password=abc123
+    ${user}     Create Dictionary       email=${EMPTY}      password=abc123
 
     Go To Login Page
     Fill Credentials  ${user}
@@ -62,7 +62,7 @@ Required email
 Required password
     [Tags]      desafio_01
 
-    ${user}     Create Dictionary       email=elson@hotmail.com     password=
+    ${user}     Create Dictionary       email=elson@hotmail.com     password=${EMPTY}
 
     Go To Login Page
     Fill Credentials  ${user}
