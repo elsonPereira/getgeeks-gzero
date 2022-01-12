@@ -4,11 +4,11 @@ Documentation       Login test suite
 Resource        ${EXECDIR}/resources/Base.robot
 
 Test Setup      Start Session
-Test Teardown   Finish Session
+Test Teardown   After Test
 
 *Test Cases*
 User Login
-
+    [Tags]      smoke
     ${user}     Factory User    login
         
     Go To Login Page

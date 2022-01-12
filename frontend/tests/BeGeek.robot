@@ -4,11 +4,11 @@ Documentation       BeGeek test suite
 Resource        ${EXECDIR}/resources/Base.robot
 
 Test Setup      Start Session
-Test Teardown   Finish Session
+Test Teardown   After Test
 
 *Test Cases*
 Be a Geek
-
+    [Tags]      smoke
     ${user}     Factory User        be_geek
     Do Login            ${user}
 
@@ -62,3 +62,25 @@ Validation Spans
     cost            sbphqk1         Valor hora deve ser numérico
     cost            sbphqk          Valor hora deve ser numérico
     cost            !@#$%&          Valor hora deve ser numérico
+
+Empty Description
+    [Tags]      empty_desc
+
+    ${user}     Factory User        empty_desc
+    Do Login    ${user}
+
+    Go To Geek Form
+    Fill Geek Form      ${user}[geek_profile]
+    Submit Geek Form
+    Alert Span Should Be    Informe a descrição do seu trabalho
+
+Empty Whats
+    [Tags]      empty_whats
+
+    ${user}     Factory User        empty_whats
+    Do Login    ${user}
+
+    Go To Geek Form
+    Fill Geek Form      ${user}[geek_profile]
+    Submit Geek Form
+    Alert Span Should Be    O Whatsapp deve ter 11 digitos contando com o DDD

@@ -41,27 +41,14 @@ def factory_user(target):
                 'cost': '100'
             }
         },
-        'short_desc': {
-            'name': 'Zell',
-            'lastname': 'Dincht',
-            'email': 'zell@ffviii.com',
-            'password': 'pwd123',
-            'geek_profile': {
-                'whats': '21980707288',
-                'desc': 'Formato o seu PC.',
-                'printer_repair': 'Não',
-                'work': 'Ambos',
-                'cost': '200'
-            }           
-        },
-        'long_desc': {
+        'attempt_be_geek': {
             'name': 'Quistis',
             'lastname': 'Trepe',
             'email': 'quistis@ffviii.com',
             'password': 'pwd123',
             'geek_profile': {
                 'whats': '21980707200',
-                'desc': 'Instalo Distros Ubuntu, Debian, ElementaryOS, PopOS, Linux Mint, Kurumin, Mandrake, Connectiva, Fedora, RedHat, CentOS, Slackware, Gentoo, Archlinux, Kubuntu, Xubuntu, Suze, Mandriva, Edubuntu, KateOS, Sabayon Linux, Manjaro Linux, BigLinux, ZorinOS, Unity',
+                'desc': 'Instalo Distros Ubuntu, Debian, ElementaryOS, PopOS, Linux Mint, Kurumin, Mandrake, Connectiva, Fedora, RedHat, CentOS, Slackware, Gentoo, Archlinux, Kubuntu, Xubuntu, Suze, Mandriva, Edubuntu, KateOS, Sabayon Linux, Manjaro Linux, BigLinux, ZorinOS, Unit',
                 'printer_repair': 'Não',
                 'work': 'Ambos',
                 'cost': '150'
